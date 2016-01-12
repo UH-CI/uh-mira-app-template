@@ -1,8 +1,8 @@
 {
   "name":"uh-mira test-1452619697",
   "appId": "uh-mira-4.0.2",
-  "batchQueue": "exclusive.q",
-  "executionSystem": "execute.uhhpc1.its.hawaii.edu",
+  "batchQueue": "sb.q",
+  "executionSystem": "sb.execute.uhhpc1.its.hawaii.edu",
   "maxRunTime": "00:00:10",
   "memoryPerNode": "1GB",
   "nodeCount": 1,
