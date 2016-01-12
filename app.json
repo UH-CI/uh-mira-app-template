@@ -5,7 +5,7 @@
   "label": "MIRA at UH",
   "shortDescription": "MIRA at UH",
   "longDescription": "MIRA at UH",
-  "deploymentPath": "/lus/scratch/software/mira_4.0.2_linux-gnu_x86_64_static/",
+  "deploymentPath": "/lus/scratch/seanbc/apps/uh-mira-4.0.2",
   "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
   "executionSystem": "execute.uhhpc1.its.hawaii.edu",
   "executionType": "CLI",
