@@ -20,12 +20,12 @@ cp $MANIFEST input/
 # See http://tldp.org/LDP/LGNET/18/bash.html for more cool stuff like this.
 #
 FILENAME=${MANIFEST##*/} 
-source ~/.bash_profile
-module load prod/mira_4.0.2
+
 
 # Check for existence of input file...
 if [ -e input/$FILENAME ]; then
-	
+
+    module load prod/mira_4.0.2
 	
 	 mira input/$FILENAME > output/mira-app_output.txt
 
