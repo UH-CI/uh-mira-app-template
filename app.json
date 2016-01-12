@@ -19,13 +19,24 @@
   "inputs": [
     {
       "id": "manifest",
-      "value": {
-        "required": true
-      },
       "details": {
         "label": "Manifest Config",
         "description": "The MIRA manifest configuration file"
-      }
+      },
+      },
+       "semantics":{
+         "ontology":[],
+         "minCardinality":1,
+         "fileTypes":[
+         "TEXT-0"
+        ]
+        },
+         "value": {
+          "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/manifest.mira",
+          "required": false,
+          "visible": true,
+          "validator": null
+         }
     }
   ],
   "parameters": [
