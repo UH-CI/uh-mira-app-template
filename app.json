@@ -1,0 +1,34 @@
+{
+  "name": "uh-mira",
+  "parallelism": "SERIAL",
+  "version": "4.0.2",
+  "label": "MIRA at UH",
+  "shortDescription": "MIRA at UH",
+  "longDescription": "MIRA at UH",
+  "deploymentPath": "/lus/scratch/software/mira_4.0.2_linux-gnu_x86_64_static/",
+  "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
+  "executionSystem": "execute.uhhpc1.its.hawaii.edu",
+  "executionType": "CLI",
+  "templatePath": "wrapper.sh",
+  "testPath": "test/test.sh",
+  "tags": [
+    "demo"
+  ],
+  "ontology": [
+  ],
+  "inputs": [
+    {
+      "id": "manifest",
+      "value": {
+        "required": true
+      },
+      "details": {
+        "label": "Manifest Config",
+        "description": "The MIRA manifest configuration file"
+      }
+    }
+  ],
+  "parameters": [
+    
+  ]
+}
