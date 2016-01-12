@@ -7,7 +7,7 @@
   "longDescription": "MIRA at UH",
   "deploymentPath": "/lus/scratch/seanbc/apps/uh-mira-4.0.2",
   "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
-  "executionSystem": "execute.uhhpc1.its.hawaii.edu",
+  "executionSystem": "sb.execute.uhhpc1.its.hawaii.edu",
   "executionType": "CLI",
   "templatePath": "wrapper.sh",
   "testPath": "test/test.sh",
