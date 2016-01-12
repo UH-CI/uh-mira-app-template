@@ -39,19 +39,19 @@ For the UH HPC Sandbox partition execution system:
 Now we need to move the AGAVE application file to the UH HPC.
 
 First create the apps directory on your Lustre scratch space:
->files-mkdir -N apps/uh-mira-app-4.0.2 -S sftp.lustre.storage.uhhpc1.its.hawaii.edu
+>files-mkdir -N apps/uh-mira-4.0.2 -S sftp.lustre.storage.uhhpc1.its.hawaii.edu
 
 Move the wrapper.sh file to Lustre:
->files-upload -F wrapper.sh -S sftp.lustre.storage.uhhpc1.its.hawaii.edu apps/uh-mira-app-4.0.2
+>files-upload -F wrapper.sh -S sftp.lustre.storage.uhhpc1.its.hawaii.edu apps/uh-mira-4.0.2
 
 Move the test folder contents to Lustre:
->files-upload -F test -S sftp.lustre.storage.uhhpc1.its.hawaii.edu apps/uh-mira-app-4.0.2
+>files-upload -F test -S sftp.lustre.storage.uhhpc1.its.hawaii.edu apps/uh-mira-4.0.2
 
 Now you can login to the UH HPC.
 
 Create file in your home directory called manifest.mira it can be blank for the test if you just want to be sure mira launches. Be sure to specify a real mira file for the default value - the current value will be a manifest.mira file in you ~/lus directory if you put your manifest there and name it "manifest.mira" this app will use it.
 
- Now navigate to your ~/lus/apps/uh-mira-app-4.0.2/test folder and run the test.sh script to be sure it runs - if should create a input and output folder and copy the manifest file to the input folder and write the standard out  to a file in the output folder.  Please do this in an interactive sandbox session vs on the login nodes.
+ Now navigate to your ~/lus/apps/uh-mira-4.0.2/test folder and run the test.sh script to be sure it runs - if should create a input and output folder and copy the manifest file to the input folder and write the standard out  to a file in the output folder.  Please do this in an interactive sandbox session vs on the login nodes.
 
 
  If the test worked you are good to register the app to your AGAVE account.
@@ -60,7 +60,7 @@ Create file in your home directory called manifest.mira it can be blank for the 
 
  Now you can create a submit template - or use the provide one which is submit.json (be sure to modify the USERNAME and email address for notifications)
 
- >jobs-template -A uh-mira-app-4.0.2 > mysubmit.json
+ >jobs-template -A uh-mira-4.0.2 > mysubmit.json
 
  Now you can submit the job to the HPC using AGAVE - you may need to add the authorization section from the submit.json file with your USERNAME.
 
