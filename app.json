@@ -23,7 +23,6 @@
         "label": "Manifest Config",
         "description": "The MIRA manifest configuration file"
       },
-      },
        "semantics":{
          "ontology":[],
          "minCardinality":1,
