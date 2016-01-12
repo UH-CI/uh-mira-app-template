@@ -49,9 +49,10 @@ Move the test folder contents to Lustre:
 
 Now you can login to the UH HPC.
 
-Create file in your home directory called input1.txt and put some randome sentences in it - this will be the default input file for this test application.
+Create file in your home directory called manifest.mira it can be blank for the test if you just want to be sure mira launches. Be sure to specify a real mira file for the default value - the current value will be a manifest.mira file in you ~/lus directory if you put your manifest there and name it "manifest.mira" this app will use it.
 
- Now navigate to your ~/lus/apps/uh-mira-app-4.0.2/test folder and run the test.sh script to be sure it runs - if should create a input and output folder and copy the input1.txt file to the input folder and write the word count to a file in the output folder.
+ Now navigate to your ~/lus/apps/uh-mira-app-4.0.2/test folder and run the test.sh script to be sure it runs - if should create a input and output folder and copy the manifest file to the input folder and write the standard out  to a file in the output folder.  Please do this in an interactive sandbox session vs on the login nodes.
+
 
  If the test worked you are good to register the app to your AGAVE account.
 
@@ -68,4 +69,6 @@ Create file in your home directory called input1.txt and put some randome senten
  OR
  >jobs-submit -W -F mysubmit.json
 
- AGAVE will take care of creating a SLURM batch script with the appropriate setting and running it in the sandbox partition on the cluster.  The results should be written to your scratch space in an "archive" folder.  You should get an email notification when the job Finishes.
+ AGAVE will take care of creating a SLURM batch script with the appropriate setting and running it in the sandbox partition on the cluster.  The results should be written to your scratch space in an "archive" folder.  You should get an email notification when the job Finishes.  
+
+
