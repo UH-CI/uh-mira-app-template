@@ -24,7 +24,7 @@ FILENAME=${MANIFEST##*/}
 
 # Check for existence of input file...
 if [ -e input/$FILENAME ]; then
-
+	source ~/.bash_profile #just to be safe
     module load prod/mira_4.0.2
 	
 	 mira input/$FILENAME > output/mira-app_output.txt
